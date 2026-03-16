@@ -11,7 +11,7 @@
 ╚═╝╚═╝     ╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
 ```
 
-![Badge](https://img.shields.io/badge/FULL--STACK_DEV-39ff14?style=for-the-badge&labelColor=050510&color=39ff14&logoColor=39ff14)
+![Badge](https://img.shields.io/badge/FULL--STACK_DEV-39ff14?style=for-the-badge&labelColor=050510&color=39ff14)
 ![Badge](https://img.shields.io/badge/AI_ENGINEER-b026ff?style=for-the-badge&labelColor=050510&color=b026ff)
 ![Badge](https://img.shields.io/badge/FREELANCER-00f0ff?style=for-the-badge&labelColor=050510&color=00f0ff)
 
@@ -27,12 +27,15 @@
 
 | Layer | Stack |
 |---|---|
-| **Languages** | Python · TypeScript · JavaScript · Node.js |
-| **Backends** | FastAPI · Express · SQLAlchemy · JWT Auth |
-| **AI / Automation** | Claude API · OpenAI API · Gemini API · n8n · Evolution API |
-| **Frontend** | React · Vite · Tailwind |
-| **Infra** | Docker · Compose · SQLite |
-| **Other** | WhatsApp integrations · scikit-learn · Web scraping |
+| **Languages** | Python · TypeScript · JavaScript · Node.js · Bash · SQL |
+| **AI / LLM** | Claude API · OpenAI API · Gemini API · LangChain · RAG · Prompt Engineering · Function Calling · Embeddings · Vector DBs · Fine-tuning · Agents · Tool Use |
+| **Backends** | FastAPI · Express · REST APIs · GraphQL · WebSockets · SQLAlchemy · JWT Auth · OAuth2 · Microservices · Webhooks |
+| **Frontend** | React · Next.js · TypeScript · Vite · Tailwind · Recharts · PWA |
+| **Databases** | SQLite · PostgreSQL · MongoDB · Redis · Pinecone · ChromaDB · Supabase |
+| **Automation** | n8n · Evolution API · WhatsApp Bots · Web Scraping · Async Python · Celery · Cron Jobs · Zapier |
+| **Cybersecurity** | Penetration Testing · API Security · OWASP Top 10 · Auth Hardening · Brute-force Scripting · HTTP Interception · Recon & Enumeration · Rate Limiting · SQL Injection · Burp Suite · OSINT |
+| **Infra / DevOps** | Docker · Docker Compose · Nginx · GitHub Actions · CI/CD · Linux · VPS · SSH |
+| **ML / Data** | scikit-learn · Pandas · NumPy · NLP · Hugging Face · Linear Regression · Sentiment Analysis |
 
 ---
 
@@ -42,8 +45,8 @@
 
 > Full-stack Magic: The Gathering card price tracker — think Bloomberg Terminal, but for cardboard.
 
-- **Backend** — FastAPI + SQLAlchemy + SQLite. REST API with JWT auth, freemium roles (free vs Pro), price history, news scraping, ML-based 7-day price predictions via scikit-learn.
-- **Frontend** — React + TypeScript dashboard with trending cards, portfolio tracker, price alerts, community comments, Pro-only AI recommendations engine.
+- **Backend** — FastAPI + SQLAlchemy + SQLite. JWT auth, freemium roles, price history, news scraping, ML-based 7-day price predictions via scikit-learn.
+- **Frontend** — React + TypeScript dashboard: trending cards, portfolio tracker, price alerts, community comments, Pro-only AI recommendations engine.
 - **Infra** — Fully Dockerized (per-service Dockerfiles + docker-compose). PWA-ready with Workbox service worker.
 
 `FastAPI` `SQLAlchemy` `scikit-learn` `React` `TypeScript` `Docker`
@@ -55,29 +58,40 @@
 > AI-powered deck construction tool — Gemini 2.5 Pro as the backbone.
 
 - Generates complete 60/100-card decklists from user parameters (format, power level, playstyle, colors, commander).
-- Uses a **RAG loop**: Gemini calls a local `searchLocalDatabase` tool to verify card legality and prices mid-generation.
-- Supports deck upgrade analysis — paste a list, get 6–12 prioritized 1-for-1 swap recommendations.
+- **RAG loop** — Gemini calls a local `searchLocalDatabase` tool to verify card legality and prices mid-generation.
+- Deck upgrade analysis — paste a list, get 6–12 prioritized 1-for-1 swap recommendations.
 - Full auth (JWT), card hover tooltips, deck vault, AI upgrade sidebar.
 
 `Gemini` `RAG` `Express` `React` `TypeScript` `SQLite` `Docker`
 
 ---
 
-### 🟣 [Talent ADS](https://talentads.com.br)
+### 🟣 [Talent ADS](https://talentads.com.br) — HR SaaS Platform
 
-> CV analysis platform powered by Gemini. HR dashboard for comparing multiple CVs side-by-side. Deployed via GitHub Pages.
+> Full-stack talent intelligence platform for companies, candidates, and headhunters. Three distinct user dashboards, one unified backend.
 
-`Gemini API` `GitHub Pages`
+- **CV analysis engine** — Gemini API parses uploaded CVs against job descriptions, scoring match %, generating radar charts (skills, culture fit, seniority), salary valuations.
+- **HR dashboard** — job posting, unlimited CV batch upload, side-by-side candidate comparison, AI-generated interview questions, internal talent bank, team management, culture setup.
+- **Candidate dashboard** — market salary estimation, job matching, AI-powered CV improvement suggestions, real-time application tracking.
+- **Headhunter directory** — recruiter profile pages, direct WhatsApp contact integration.
+- **Summit platform** — event module for *Congresso Talent Intelligence Brasil*: registration, exhibitor pages, admin CRM, n8n email campaign workflows.
+- **Token billing** — credit-based usage with Netcred payment integration.
+
+`Gemini API` `React` `TypeScript` `Express` `SQLite` `n8n` `Docker` `Nginx`
 
 ---
 
 ## `> cat other_work.log`
 
 ```
-▸ WhatsApp integrations — bots and automation pipelines via Evolution API + n8n
-▸ API automation — async Python scripts, custom HTTP clients, brute-force testing
-▸ LaTeX technical translation — 44-page offshore equipment spec (Baker Hughes / GranMorgu) EN → PT-BR
-▸ AI image generation workflows — prompt engineering for book cover design and illustration
+▸ AI chatbot backends        — multi-tenant Claude/OpenAI assistants with memory, tool use, webhook delivery via FastAPI
+▸ WhatsApp AI agents         — autonomous sales/support bots using Evolution API + n8n + LLM routing for Brazilian SMBs
+▸ RAG pipelines              — document ingestion, chunking, embedding, semantic search (ChromaDB / Pinecone)
+▸ Full-stack SaaS MVPs       — end-to-end builds: auth, billing, dashboards, REST APIs, Docker — spec to production
+▸ API penetration testing    — async brute-force scripting, endpoint recon, auth bypass testing, vulnerability reporting
+▸ Automation pipelines       — n8n workflows connecting CRMs, email campaigns, webhooks, and third-party APIs
+▸ LLM prompt engineering     — system prompt design, few-shot tuning, structured output schemas, eval harnesses
+▸ Data scraping & enrichment — async Python scrapers, headless browser automation, structured data pipelines
 ```
 
 ---
@@ -88,10 +102,13 @@
 TITLE  : A COLHEITA DE MENTES — ECOS, VOL. 1
 GENRE  : Cyberpunk / Science Fiction
 SETTING: Dicotomia — a dystopian megacity split between neon-drenched lower city and corporate heights
-STATUS : Preparing for self-publication via Amazon KDP
+STATUS : PUBLISHED ✓
 ```
 
 > Exploring memory, power, and forced evolution through a cast of augmented outcasts.
+
+[![Amazon BR](https://img.shields.io/badge/AMAZON.COM.BR-b026ff?style=for-the-badge&labelColor=050510)](https://www.amazon.com.br/dp/B0GR9894D5)
+[![Amazon COM](https://img.shields.io/badge/AMAZON.COM-39ff14?style=for-the-badge&labelColor=050510)](https://www.amazon.com/dp/B0GR9MPRLR)
 
 ---
 
