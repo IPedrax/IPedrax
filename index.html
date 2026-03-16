@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IPedrax — Full-Stack Developer & AI Engineer</title>
+<title>IPedrax â€” Full-Stack Developer & AI Engineer</title>
 <meta name="description" content="Portfolio of Pedro Medeiros: Full-Stack Developer, AI Engineer, Freelancer.">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
@@ -56,7 +56,7 @@
     background: var(--surface);
   }
   .header::before {
-    content: '┌─ README.md ──────────────────────────────────────────';
+    content: 'â”Œâ”€ README.md â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€';
     font-size: 10px; color: var(--green);
     position: absolute; top: -9px; left: 0;
     opacity: 0.5; background: var(--bg); padding: 0 4px;
@@ -141,7 +141,7 @@
 
   .feature-list { margin: 10px 0 12px; padding: 0; list-style: none; }
   .feature-list li { font-size: 11px; color: var(--muted); padding: 3px 0 3px 16px; position: relative; }
-  .feature-list li::before { content: '▸'; position: absolute; left: 0; color: var(--green); }
+  .feature-list li::before { content: 'â–¸'; position: absolute; left: 0; color: var(--green); }
   .feature-list li strong { color: var(--text); }
 
   /* OTHER WORK */
@@ -165,6 +165,7 @@
     border-left-color: #d040ff;
   }
   .novel-title { font-family: var(--font-pixel); font-size: 9px; color: var(--purple); text-shadow: var(--purple-glow); margin-bottom: 10px; line-height: 1.8; }
+  .novel-subtitle { font-size: 10px; color: var(--muted); margin-bottom: 10px; letter-spacing: 1px; }
   a.novel-block p { font-size: 11px; color: var(--muted); }
   .novel-status { font-size: 9px; color: var(--green); margin-top: 10px; opacity: 0.9; }
   .novel-links { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
@@ -209,7 +210,7 @@
   </div>
   <div class="bio-lines">
     <p><span class="hl-g">// </span>Freelance developer based in <span class="hl-g">Brazil</span>. Studying Computer Engineering @ <span class="hl-p">IFC</span>.</p>
-    <p><span class="hl-g">// </span>I build things that <span class="hl-b">talk to other things</span> — WhatsApp bots, LLM pipelines, REST APIs, full-stack apps.</p>
+    <p><span class="hl-g">// </span>I build things that <span class="hl-b">talk to other things</span> â€” WhatsApp bots, LLM pipelines, REST APIs, full-stack apps.</p>
     <p><span class="hl-g">// </span>If it involves <span class="hl-p">Claude</span>, <span class="hl-p">OpenAI</span>, <span class="hl-g">n8n</span>, or <span class="hl-g">Evolution API</span>, I'm already interested.</p>
   </div>
 </div>
@@ -232,7 +233,7 @@
     </div>
 
     <div class="stack-group">
-      <div class="stack-label">AI / LLM</div>
+      <div class="stack-label">AI</div>
       <div class="tech-tags">
         <span class="tag g">Claude API</span>
         <span class="tag g">OpenAI API</span>
@@ -361,11 +362,11 @@
     <div class="project-header">
       <span class="project-name">MTG Stock Market</span>
     </div>
-    <div class="project-desc">Full-stack Magic: The Gathering card price tracker — think Bloomberg Terminal, but for cardboard.</div>
+    <div class="project-desc">Full-stack Magic: The Gathering card price tracker â€” think Bloomberg Terminal, but for cardboard.</div>
     <ul class="feature-list">
-      <li><strong>Backend</strong> — FastAPI + SQLAlchemy + SQLite. JWT auth, freemium roles, price history, news scraping, ML-based 7-day predictions via scikit-learn.</li>
-      <li><strong>Frontend</strong> — React + TypeScript dashboard: trending cards, portfolio tracker, price alerts, community comments, Pro-only AI recommendations engine.</li>
-      <li><strong>Infra</strong> — Fully Dockerized (per-service Dockerfiles + docker-compose). PWA-ready with Workbox service worker.</li>
+      <li><strong>Backend</strong> â€” FastAPI + SQLAlchemy + SQLite. JWT auth, freemium roles, price history, news scraping, ML-based 7-day predictions via scikit-learn.</li>
+      <li><strong>Frontend</strong> â€” React + TypeScript dashboard: trending cards, portfolio tracker, price alerts, community comments, Pro-only AI recommendations engine.</li>
+      <li><strong>Infra</strong> â€” Fully Dockerized (per-service Dockerfiles + docker-compose). PWA-ready with Workbox service worker.</li>
     </ul>
     <div class="project-tech">
       <span class="inline-tag">FastAPI</span><span class="inline-tag">SQLAlchemy</span><span class="inline-tag">scikit-learn</span><span class="inline-tag">React</span><span class="inline-tag">TypeScript</span><span class="inline-tag">Docker</span>
@@ -376,11 +377,11 @@
     <div class="project-header">
       <span class="project-name">MTG Deck Builder</span>
     </div>
-    <div class="project-desc">AI-powered deck construction tool — Gemini 2.5 Pro as the backbone.</div>
+    <div class="project-desc">AI-powered deck construction tool â€” Gemini 2.5 Pro as the backbone.</div>
     <ul class="feature-list">
       <li>Generates complete 60/100-card decklists from user parameters (format, power level, playstyle, colors, commander).</li>
-      <li><strong>RAG loop</strong> — Gemini calls a local <code>searchLocalDatabase</code> tool to verify card legality and prices mid-generation.</li>
-      <li>Deck upgrade analysis — paste a list, get 6–12 prioritized 1-for-1 swap recommendations.</li>
+      <li><strong>RAG loop</strong> â€” Gemini calls a local <code>searchLocalDatabase</code> tool to verify card legality and prices mid-generation.</li>
+      <li>Deck upgrade analysis â€” paste a list, get 6â€“12 prioritized 1-for-1 swap recommendations.</li>
       <li>Full auth (JWT), card hover tooltips, deck vault, AI upgrade sidebar.</li>
     </ul>
     <div class="project-tech">
@@ -388,24 +389,24 @@
     </div>
   </div>
 
-  <!-- TALENT ADS — entire card is a link -->
+  <!-- TALENT ADS â€” entire card is a link -->
   <a class="project-card" href="https://talentads.com.br" target="_blank" rel="noopener noreferrer">
     <div class="project-header">
       <span class="project-name">Talent ADS</span>
-      <span class="click-hint">↗ talentads.com.br</span>
+      <span class="click-hint">â†— talentads.com.br</span>
     </div>
-    <div class="project-desc">Full-stack HR SaaS platform — AI-powered talent intelligence for companies, candidates, and headhunters. Three distinct dashboards, one unified backend.</div>
+    <div class="project-desc">Full-stack HR SaaS platform â€” AI-powered talent intelligence for companies, candidates, and headhunters. Three distinct dashboards, one unified backend.</div>
     <ul class="feature-list">
-      <li><strong>CV analysis engine</strong> — Gemini API parses uploaded CVs against job descriptions, scoring match %, generating radar charts (skills, culture fit, seniority), salary valuations.</li>
-      <li><strong>HR dashboard</strong> — job posting, unlimited CV batch upload, side-by-side candidate comparison, AI-generated interview questions, internal talent bank, team management, culture setup.</li>
-      <li><strong>Candidate dashboard</strong> — market salary estimation, job matching, AI-powered CV improvement suggestions, real-time application tracking.</li>
-      <li><strong>Headhunter directory</strong> — recruiter profile pages, direct WhatsApp contact integration.</li>
-      <li><strong>Summit platform</strong> — event module for Congresso Talent Intelligence Brasil: registration, exhibitor pages, admin CRM, n8n email campaign workflows.</li>
-      <li><strong>Token billing</strong> — credit-based usage with Netcred payment integration.</li>
-      <li><strong>Infra</strong> — React + TypeScript + Vite, Express + SQLite, Nginx reverse proxy, Docker Compose.</li>
+      <li><strong>CV analysis engine</strong> â€” AI parses uploaded CVs against job descriptions, scoring match %, generating radar charts (skills, culture fit, seniority), salary valuations.</li>
+      <li><strong>HR dashboard</strong> â€” job posting, unlimited CV batch upload, side-by-side candidate comparison, AI-generated interview questions, internal talent bank, team management, culture setup.</li>
+      <li><strong>Candidate dashboard</strong> â€” market salary estimation, job matching, AI-powered CV improvement suggestions, real-time application tracking.</li>
+      <li><strong>Headhunter directory</strong> â€” recruiter profile pages, direct WhatsApp contact integration.</li>
+      <li><strong>Summit platform</strong> â€” event module for Congresso Talent Intelligence Brasil: registration, exhibitor pages, admin CRM, n8n email campaign workflows.</li>
+      <li><strong>Token billing</strong> â€” credit-based usage with Netcred payment integration.</li>
+      <li><strong>Infra</strong> â€” React + TypeScript + Vite, Express + SQLite, Nginx reverse proxy, Docker Compose.</li>
     </ul>
     <div class="project-tech">
-      <span class="inline-tag">Gemini API</span><span class="inline-tag">React</span><span class="inline-tag">TypeScript</span><span class="inline-tag">Express</span><span class="inline-tag">SQLite</span><span class="inline-tag">n8n</span><span class="inline-tag">Docker</span><span class="inline-tag">Nginx</span>
+      <span class="inline-tag">React</span><span class="inline-tag">TypeScript</span><span class="inline-tag">Express</span><span class="inline-tag">SQLite</span><span class="inline-tag">n8n</span><span class="inline-tag">Docker</span><span class="inline-tag">Nginx</span>
     </div>
   </a>
 </div>
@@ -413,26 +414,26 @@
 <!-- OTHER WORK -->
 <div class="section">
   <div class="section-title"><span class="prompt">&gt;</span> cat other_work.log</div>
-  <div class="other-item"><span class="marker">▸</span><span><strong>AI chatbot backends</strong> — multi-tenant Claude/OpenAI-powered assistants with conversation memory, tool use, and webhook delivery via FastAPI</span></div>
-  <div class="other-item"><span class="marker">▸</span><span><strong>WhatsApp AI agents</strong> — autonomous sales and support bots using Evolution API + n8n + LLM routing, deployed for Brazilian SMBs</span></div>
-  <div class="other-item"><span class="marker">▸</span><span><strong>RAG pipelines</strong> — document ingestion, chunking, embedding, and semantic search over private knowledge bases (ChromaDB / Pinecone)</span></div>
-  <div class="other-item"><span class="marker">▸</span><span><strong>Full-stack SaaS MVPs</strong> — end-to-end product builds: auth, billing, dashboards, REST APIs, Docker deployment — from spec to production</span></div>
-  <div class="other-item"><span class="marker">▸</span><span><strong>API penetration testing</strong> — authorized async brute-force scripting, endpoint recon, auth bypass testing, and structured vulnerability reporting</span></div>
-  <div class="other-item"><span class="marker">▸</span><span><strong>Automation pipelines</strong> — n8n workflows connecting CRMs, email campaigns, webhooks, and third-party APIs with zero-code orchestration</span></div>
-  <div class="other-item"><span class="marker">▸</span><span><strong>LLM prompt engineering</strong> — system prompt design, few-shot tuning, structured output schemas, and evaluation harnesses for production LLM apps</span></div>
-  <div class="other-item"><span class="marker">▸</span><span><strong>Data scraping &amp; enrichment</strong> — async Python scrapers, headless browser automation, and structured data pipelines for lead generation and market research</span></div>
+  <div class="other-item"><span class="marker">â–¸</span><span><strong>AI chatbot backends</strong> â€” multi-tenant Claude/OpenAI-powered assistants with conversation memory, tool use, and webhook delivery via FastAPI</span></div>
+  <div class="other-item"><span class="marker">â–¸</span><span><strong>WhatsApp AI agents</strong> â€” autonomous sales and support bots using Evolution API + n8n + LLM routing, deployed for Brazilian SMBs</span></div>
+  <div class="other-item"><span class="marker">â–¸</span><span><strong>RAG pipelines</strong> â€” document ingestion, chunking, embedding, and semantic search over private knowledge bases (ChromaDB / Pinecone)</span></div>
+  <div class="other-item"><span class="marker">â–¸</span><span><strong>Full-stack SaaS MVPs</strong> â€” end-to-end product builds: auth, billing, dashboards, REST APIs, Docker deployment â€” from spec to production</span></div>
+  <div class="other-item"><span class="marker">â–¸</span><span><strong>API penetration testing</strong> â€” authorized async brute-force scripting, endpoint recon, auth bypass testing, and structured vulnerability reporting</span></div>
+  <div class="other-item"><span class="marker">â–¸</span><span><strong>Automation pipelines</strong> â€” n8n workflows connecting CRMs, email campaigns, webhooks, and third-party APIs with zero-code orchestration</span></div>
+  <div class="other-item"><span class="marker">â–¸</span><span><strong>LLM prompt engineering</strong> â€” system prompt design, few-shot tuning, structured output schemas, and evaluation harnesses for production LLM apps</span></div>
+  <div class="other-item"><span class="marker">â–¸</span><span><strong>Data scraping &amp; enrichment</strong> â€” async Python scrapers, headless browser automation, and structured data pipelines for lead generation and market research</span></div>
 </div>
 
 <!-- WRITING -->
 <div class="section">
   <div class="section-title"><span class="prompt">&gt;</span> cat ./writing/novel.md</div>
   <a class="novel-block" href="https://www.amazon.com.br/dp/B0GR9894D5" target="_blank" rel="noopener noreferrer">
-    <div class="novel-title">A COLHEITA DE MENTES — ECOS, VOL. 1</div>
+    <div class="novel-title">THE HARVEST OF MINDS — ECOS, VOL. 1</div><div class="novel-subtitle">A Colheita de Mentes</div>
     <p>Cyberpunk novel set in a dystopian city called <span class="hl-p">Dicotomia</span>. Neon-drenched lower city, corporate heights, a cast of augmented outcasts. Exploring memory, power, and forced evolution.</p>
-    <div class="novel-status">&gt; STATUS: PUBLISHED — available on Amazon KDP<span class="blink">_</span></div>
+    <div class="novel-status">&gt; STATUS: PUBLISHED â€” available on Amazon KDP<span class="blink">_</span></div>
     <div class="novel-links">
-      <span class="novel-link">↗ amazon.com.br</span>
-      <span class="novel-link">↗ amazon.com</span>
+      <span class="novel-link">â†— amazon.com.br</span>
+      <span class="novel-link">â†— amazon.com</span>
     </div>
   </a>
 </div>
@@ -458,7 +459,10 @@
   </div>
 </div>
 
-<div class="footer">SYSTEM.HALT() &nbsp;&middot;&nbsp; © 2026 PEDRO MEDEIROS &nbsp;&middot;&nbsp; DICOTOMIA AWAITS</div>
+<div class="footer">SYSTEM.HALT() &nbsp;&middot;&nbsp; Â© 2026 PEDRO MEDEIROS &nbsp;&middot;&nbsp; DICOTOMIA AWAITS</div>
 
 </body>
 </html>
+
+
+
