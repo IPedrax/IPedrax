@@ -1,4 +1,4 @@
-# Pedro — Full-Stack Developer & AI Engineer
+# IPedrax — Full-Stack Developer & AI Engineer
 
 Freelance developer focused on **AI integrations**, **automation**, and **API-driven backends**. Based in Brazil. Studying Computer Engineering.
 
