@@ -1,6 +1,6 @@
 # Pedro — Full-Stack Developer & AI Engineer
 
-Freelance developer focused on **AI integrations**, **automation**, and **API-driven backends**. Based in São Bento do Sul, SC, Brazil. Studying Computer Engineering at Instituto Federal Catarinense (graduating 2028).
+Freelance developer focused on **AI integrations**, **automation**, and **API-driven backends**. Based in Brazil. Studying Computer Engineering.
 
 I build things that talk to other things — WhatsApp bots, LLM pipelines, REST APIs, full-stack apps. If it involves Claude, OpenAI, n8n, or Evolution API, I'm probably already interested.
 
@@ -41,11 +41,11 @@ AI-powered deck construction tool using Gemini 2.5 Pro as the backbone.
 - Backend: Express + TypeScript + SQLite (local card DB seeded from Scryfall bulk data).
 - Frontend: React + TypeScript + Vite + Gemini SDK.
 
-Tech: `Gemini 2.5 Pro` `React` `TypeScript` `Express` `SQLite` `Docker`
+Tech: `Gemini` `React` `TypeScript` `Express` `SQLite` `Docker`
 
 ---
 
-### merecequanto.com.br
+### [Talent ADS](https://talentads.com.br)
 CV analysis platform powered by Gemini. HR dashboard for comparing multiple CVs side-by-side, deployed via GitHub Pages.
 
 ---
@@ -67,6 +67,5 @@ Working on **A Colheita de Mentes — Ecos, Vol. 1**, a cyberpunk novel set in a
 
 ## Contact
 
-**Freelance (99Freelas)**: [99freelas.com.br/user/ipedrax](https://www.99freelas.com.br/user/ipedrax)  
-**GitHub**: [github.com/IPedrax](https://github.com/IPedrax)  
+**Freelance (99Freelas)**: [IPedrax](https://www.99freelas.com.br/user/ipedrax)   
 **Twitter/X**: [@ipedrax](https://twitter.com/ipedrax)
