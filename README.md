@@ -17,8 +17,8 @@
 
 ```
 // Freelance developer based in Brazil. Studying Computer Engineering @ IFC.
-// I build things that talk to other things -- WhatsApp bots, LLM pipelines, REST APIs, full-stack apps.
-// If it involves Claude, OpenAI, n8n, or Evolution API, I'm already interested.
+// From zero to deployed -- backends, frontends, AI integrations, and everything in between.
+// If it thinks, automates, or integrates -- I'm the one building it.
 ```
 
 ---
