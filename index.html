@@ -135,25 +135,24 @@
   .other-item .marker { color: var(--green); flex-shrink: 0; }
   .other-item strong { color: var(--text); }
 
-  a.novel-block {
+  .novel-block {
     border-left: 3px solid var(--purple);
     padding: 16px 20px;
     background: rgba(176,38,255,0.04);
-    display: block; text-decoration: none; color: inherit;
-    transition: all 0.2s;
-  }
-  a.novel-block:hover {
-    background: rgba(176,38,255,0.09);
-    box-shadow: 0 0 20px rgba(176,38,255,0.08), 4px 4px 0 rgba(176,38,255,0.12);
-    transform: translateX(3px);
-    border-left-color: #d040ff;
   }
   .novel-title { font-family: var(--font-pixel); font-size: 9px; color: var(--purple); text-shadow: var(--purple-glow); margin-bottom: 4px; line-height: 1.8; }
   .novel-subtitle { font-size: 10px; color: var(--muted); margin-bottom: 10px; letter-spacing: 1px; }
-  a.novel-block p { font-size: 11px; color: var(--muted); }
+  .novel-block p { font-size: 11px; color: var(--muted); }
   .novel-status { font-size: 9px; color: var(--green); margin-top: 10px; opacity: 0.9; }
   .novel-links { margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; }
-  .novel-link { font-size: 9px; color: var(--blue); border: 1px solid rgba(0,240,255,0.4); padding: 2px 8px; opacity: 0.7; }
+  .novel-link {
+    font-size: 9px; color: var(--blue);
+    border: 1px solid rgba(0,240,255,0.4);
+    padding: 3px 10px; opacity: 0.7;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .novel-link:hover { opacity: 1; background: rgba(0,240,255,0.08); box-shadow: var(--blue-glow); }
 
   .terminal-contact { background: #000; border: 1px solid #2a2a3a; overflow: hidden; }
   .term-header { background: #111120; border-bottom: 1px solid #2a2a3a; padding: 8px 16px; display: flex; align-items: center; gap: 6px; }
@@ -404,16 +403,16 @@
 
 <div class="section">
   <div class="section-title"><span class="prompt">&gt;</span> cat ./writing/novel.md</div>
-  <a class="novel-block" href="https://www.amazon.com.br/dp/B0GR9894D5" target="_blank" rel="noopener noreferrer">
+  <div class="novel-block">
     <div class="novel-title">THE HARVEST OF MINDS &mdash; ECOS, VOL. 1</div>
     <div class="novel-subtitle">A Colheita de Mentes</div>
     <p>Cyberpunk novel set in a dystopian city called <span class="hl-p">Dicotomia</span>. Neon-drenched lower city, corporate heights, a cast of augmented outcasts. Exploring memory, power, and forced evolution.</p>
     <div class="novel-status">&gt; STATUS: PUBLISHED &mdash; available on Amazon KDP<span class="blink">_</span></div>
     <div class="novel-links">
-      <span class="novel-link">&#8599; amazon.com.br</span>
-      <span class="novel-link">&#8599; amazon.com</span>
+      <a class="novel-link" href="https://www.amazon.com.br/dp/B0GR9894D5" target="_blank" rel="noopener noreferrer">&#8599; amazon.com.br</a>
+      <a class="novel-link" href="https://www.amazon.com/dp/B0GR9MPRLR" target="_blank" rel="noopener noreferrer">&#8599; amazon.com</a>
     </div>
-  </a>
+  </div>
 </div>
 
 <div class="section">
