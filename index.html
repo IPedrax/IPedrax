@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPedrax — Full-Stack Developer & AI Engineer</title>
+<meta name="description" content="Portfolio of Pedro Medeiros: Full-Stack Developer, AI Engineer, Freelancer.">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #050510;
+    --surface: #0a0a1a;
+    --surface2: #0f0f20;
+    --green: #39ff14;
+    --purple: #b026ff;
+    --blue: #00f0ff;
+    --text: #e0e0ff;
+    --muted: #8888aa;
+    --font-mono: 'Fira Code', monospace;
+    --font-pixel: 'Press Start 2P', cursive;
+    --green-glow: 0 0 8px rgba(57,255,20,0.5);
+    --purple-glow: 0 0 8px rgba(176,38,255,0.5);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.7;
+    padding: 40px 24px;
+    max-width: 820px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* CRT scanlines */
+  body::before {
+    content: '';
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 3px,
+      rgba(0,0,0,0.07) 3px,
+      rgba(0,0,0,0.07) 4px
+    );
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  /* CRT vignette */
+  body::after {
+    content: '';
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.5) 100%);
+    pointer-events: none;
+    z-index: 998;
+  }
+
+  /* ---- HEADER ---- */
+  .header {
+    border: 1px solid var(--green);
+    padding: 28px 32px;
+    margin-bottom: 32px;
+    position: relative;
+    box-shadow: 0 0 24px rgba(57,255,20,0.08), inset 0 0 40px rgba(57,255,20,0.03);
+    background: var(--surface);
+  }
+  .header::before {
+    content: '┌─ README.md ──────────────────────────────────────────';
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--green);
+    position: absolute;
+    top: -9px; left: 0;
+    opacity: 0.5;
+    background: var(--bg);
+    padding: 0 4px;
+  }
+
+  .prompt-line {
+    color: var(--blue);
+    font-size: 10px;
+    margin-bottom: 14px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+  }
+
+  .name-title {
+    font-family: var(--font-pixel);
+    font-size: clamp(16px, 4vw, 26px);
+    color: var(--text);
+    text-shadow: 3px 3px 0 var(--purple), -1px -1px 0 rgba(57,255,20,0.4);
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+  }
+
+  .subtitle-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .role-badge {
+    font-family: var(--font-pixel);
+    font-size: 8px;
+    padding: 5px 12px;
+    letter-spacing: 1px;
+  }
+  .role-badge.green {
+    color: var(--green);
+    border: 1px solid var(--green);
+    box-shadow: var(--green-glow);
+  }
+  .role-badge.purple {
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    box-shadow: var(--purple-glow);
+  }
+  .role-badge.blue {
+    color: var(--blue);
+    border: 1px solid var(--blue);
+  }
+
+  .bio-lines p {
+    color: var(--muted);
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .bio-lines p .hl-g { color: var(--green); }
+  .bio-lines p .hl-p { color: var(--purple); }
+  .bio-lines p .hl-b { color: var(--blue); }
+
+  /* ---- SECTIONS ---- */
+  .section { margin-bottom: 32px; }
+
+  .section-title {
+    font-family: var(--font-pixel);
+    font-size: 9px;
+    color: var(--purple);
+    text-shadow: 0 0 10px rgba(176,38,255,0.6);
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(176,38,255,0.4), transparent);
+  }
+  .section-title .prompt { color: var(--green); }
+
+  /* ---- STACK GRID ---- */
+  .stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .stack-group {
+    background: var(--surface);
+    border: 1px dashed rgba(57,255,20,0.2);
+    padding: 14px 16px;
+  }
+  .stack-label {
+    font-size: 9px;
+    font-family: var(--font-pixel);
+    color: var(--green);
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  .tech-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+
+  .tag {
+    font-size: 10px;
+    padding: 2px 8px;
+    border: 1px solid rgba(176,38,255,0.35);
+    color: var(--purple);
+    background: rgba(176,38,255,0.05);
+    transition: all 0.2s;
+    cursor: default;
+  }
+  .tag:hover { background: rgba(176,38,255,0.15); box-shadow: var(--purple-glow); }
+  .tag.g {
+    border-color: rgba(57,255,20,0.35);
+    color: var(--green);
+    background: rgba(57,255,20,0.05);
+  }
+  .tag.g:hover { background: rgba(57,255,20,0.15); box-shadow: var(--green-glow); }
+
+  /* ---- PROJECT CARDS ---- */
+  .project-card {
+    background: var(--surface);
+    border: 1px dotted rgba(57,255,20,0.3);
+    padding: 20px 22px;
+    margin-bottom: 14px;
+    transition: all 0.2s;
+  }
+  .project-card:hover {
+    border-style: solid;
+    box-shadow: 0 0 20px rgba(57,255,20,0.08), 4px 4px 0 rgba(57,255,20,0.1);
+    transform: translateX(3px);
+  }
+  .project-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .project-name {
+    font-family: var(--font-pixel);
+    font-size: 10px;
+    color: var(--green);
+    text-shadow: var(--green-glow);
+  }
+  .project-link {
+    font-size: 10px;
+    color: var(--blue);
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  .project-link:hover { opacity: 1; text-decoration: underline; }
+  .project-desc {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+  .project-desc code {
+    color: var(--green);
+    font-size: 10px;
+    background: rgba(57,255,20,0.08);
+    padding: 1px 4px;
+  }
+  .project-tech { display: flex; flex-wrap: wrap; gap: 4px; }
+  .inline-tag {
+    font-size: 9px;
+    background: rgba(57,255,20,0.06);
+    border: 1px solid rgba(57,255,20,0.25);
+    color: rgba(57,255,20,0.7);
+    padding: 1px 7px;
+  }
+
+  /* ---- OTHER WORK ---- */
+  .other-item {
+    display: flex;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(176,38,255,0.12);
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .other-item:last-child { border-bottom: none; }
+  .other-item .marker { color: var(--green); flex-shrink: 0; }
+  .other-item strong { color: var(--text); }
+
+  /* ---- NOVEL BLOCK ---- */
+  .novel-block {
+    border-left: 3px solid var(--purple);
+    padding: 16px 20px;
+    background: rgba(176,38,255,0.04);
+  }
+  .novel-title {
+    font-family: var(--font-pixel);
+    font-size: 9px;
+    color: var(--purple);
+    text-shadow: var(--purple-glow);
+    margin-bottom: 10px;
+    line-height: 1.8;
+  }
+  .novel-block p { font-size: 11px; color: var(--muted); }
+  .novel-block .status { font-size: 9px; color: var(--blue); margin-top: 10px; opacity: 0.8; }
+
+  /* ---- CONTACT TERMINAL ---- */
+  .terminal-contact {
+    background: #000;
+    border: 1px solid #2a2a3a;
+    overflow: hidden;
+  }
+  .term-header {
+    background: #111120;
+    border-bottom: 1px solid #2a2a3a;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot.r { background: #ff5f56; }
+  .dot.y { background: #ffbd2e; }
+  .dot.g { background: #27c93f; }
+  .term-title { font-size: 9px; color: #555; margin-left: 8px; }
+  .term-body { padding: 18px 20px; }
+  .term-line { font-size: 11px; color: #444; margin-bottom: 5px; }
+  .term-line.active { color: var(--green); }
+  .contact-links { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .contact-link {
+    font-family: var(--font-pixel);
+    font-size: 8px;
+    color: var(--green);
+    text-decoration: none;
+    border: 1px solid var(--green);
+    padding: 6px 12px;
+    box-shadow: var(--green-glow);
+    transition: all 0.2s;
+  }
+  .contact-link:hover {
+    background: rgba(57,255,20,0.1);
+    box-shadow: 0 0 20px rgba(57,255,20,0.5);
+  }
+  .contact-link.p {
+    color: var(--purple);
+    border-color: var(--purple);
+    box-shadow: var(--purple-glow);
+  }
+  .contact-link.p:hover {
+    background: rgba(176,38,255,0.1);
+    box-shadow: 0 0 20px rgba(176,38,255,0.5);
+  }
+
+  /* ---- FOOTER ---- */
+  .footer {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 9px;
+    color: #2a2a3a;
+    padding-top: 16px;
+    border-top: 1px dashed #1a1a2a;
+  }
+
+  .blink { animation: blink 1s step-end infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* ---- GLITCH on hover ---- */
+  .name-title:hover {
+    animation: glitch 0.3s steps(2) infinite;
+  }
+  @keyframes glitch {
+    0%   { text-shadow: 3px 3px 0 var(--purple), -1px -1px 0 rgba(57,255,20,0.4); }
+    25%  { text-shadow: -3px 2px 0 var(--purple), 2px -2px 0 var(--green); clip-path: inset(10% 0 80% 0); }
+    50%  { text-shadow: 3px -2px 0 var(--blue), -2px 2px 0 var(--purple); }
+    75%  { text-shadow: -2px 3px 0 var(--green), 3px -1px 0 var(--purple); clip-path: inset(70% 0 10% 0); }
+    100% { text-shadow: 3px 3px 0 var(--purple), -1px -1px 0 rgba(57,255,20,0.4); clip-path: none; }
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 20px 14px; }
+    .header { padding: 20px 18px; }
+    .stack-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="prompt-line">&gt; INITIALIZING PROFILE SEQUENCE...</div>
+  <div class="name-title">IPedrax<span class="blink">_</span></div>
+  <div class="subtitle-row">
+    <span class="role-badge green">FULL-STACK DEV</span>
+    <span class="role-badge purple">AI ENGINEER</span>
+    <span class="role-badge blue">FREELANCER</span>
+  </div>
+  <div class="bio-lines">
+    <p><span class="hl-g">// </span>Freelance developer based in <span class="hl-g">Brazil</span>. Studying Computer Engineering @ <span class="hl-p">IFC</span>.</p>
+    <p><span class="hl-g">// </span>I build things that <span class="hl-b">talk to other things</span> — WhatsApp bots, LLM pipelines, REST APIs, full-stack apps.</p>
+    <p><span class="hl-g">// </span>If it involves <span class="hl-p">Claude</span>, <span class="hl-p">OpenAI</span>, <span class="hl-g">n8n</span>, or <span class="hl-g">Evolution API</span>, I'm already interested.</p>
+  </div>
+</div>
+
+<!-- STACK -->
+<div class="section">
+  <div class="section-title"><span class="prompt">&gt;</span> cat stack.json</div>
+  <div class="stack-grid">
+    <div class="stack-group">
+      <div class="stack-label">LANGUAGES</div>
+      <div class="tech-tags">
+        <span class="tag g">Python</span>
+        <span class="tag g">TypeScript</span>
+        <span class="tag g">JavaScript</span>
+        <span class="tag g">Node.js</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <div class="stack-label">BACKENDS</div>
+      <div class="tech-tags">
+        <span class="tag">FastAPI</span>
+        <span class="tag">Express</span>
+        <span class="tag">SQLAlchemy</span>
+        <span class="tag">JWT Auth</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <div class="stack-label">AI / AUTOMATION</div>
+      <div class="tech-tags">
+        <span class="tag g">Claude API</span>
+        <span class="tag g">OpenAI API</span>
+        <span class="tag g">Gemini API</span>
+        <span class="tag g">n8n</span>
+        <span class="tag g">Evolution API</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <div class="stack-label">FRONTEND</div>
+      <div class="tech-tags">
+        <span class="tag">React</span>
+        <span class="tag">Vite</span>
+        <span class="tag">Tailwind</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <div class="stack-label">INFRA</div>
+      <div class="tech-tags">
+        <span class="tag">Docker</span>
+        <span class="tag">Compose</span>
+        <span class="tag">SQLite</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <div class="stack-label">OTHER</div>
+      <div class="tech-tags">
+        <span class="tag">WhatsApp integrations</span>
+        <span class="tag">scikit-learn</span>
+        <span class="tag">Web scraping</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+  <div class="section-title"><span class="prompt">&gt;</span> ls -la ./projects</div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <span class="project-name">MTG Stock Market</span>
+    </div>
+    <div class="project-desc">
+      Full-stack Magic: The Gathering card price tracker — think Bloomberg Terminal, but for cardboard.<br><br>
+      Backend: FastAPI + SQLAlchemy + SQLite with JWT auth, freemium roles, price history, news scraping, and ML-based 7-day price predictions via scikit-learn. Frontend: React + TypeScript dashboard with trending cards, portfolio tracker, price alerts, community comments, and a Pro-only AI recommendations engine. Fully Dockerized (per-service Dockerfiles + docker-compose). PWA-ready with Workbox service worker.
+    </div>
+    <div class="project-tech">
+      <span class="inline-tag">FastAPI</span>
+      <span class="inline-tag">SQLAlchemy</span>
+      <span class="inline-tag">scikit-learn</span>
+      <span class="inline-tag">React</span>
+      <span class="inline-tag">TypeScript</span>
+      <span class="inline-tag">Docker</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <span class="project-name">MTG Deck Builder</span>
+    </div>
+    <div class="project-desc">
+      AI-powered deck construction tool — Gemini 2.5 Pro as the backbone.<br><br>
+      Generates complete 60/100-card decklists from user parameters (format, power level, playstyle, colors, commander) using a RAG loop: Gemini calls a local <code>searchLocalDatabase</code> tool to verify card legality and prices mid-generation. Supports deck upgrade analysis — paste a list, get 6–12 prioritized 1-for-1 swap recommendations. Full auth (JWT), card hover tooltips, deck vault, AI upgrade sidebar.
+    </div>
+    <div class="project-tech">
+      <span class="inline-tag">Gemini</span>
+      <span class="inline-tag">RAG</span>
+      <span class="inline-tag">Express</span>
+      <span class="inline-tag">React</span>
+      <span class="inline-tag">TypeScript</span>
+      <span class="inline-tag">SQLite</span>
+      <span class="inline-tag">Docker</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <span class="project-name">Talent ADS</span>
+      <a class="project-link" href="https://talentads.com.br" target="_blank">↗ talentads.com.br</a>
+    </div>
+    <div class="project-desc">
+      CV analysis platform powered by Gemini. HR dashboard for comparing multiple CVs side-by-side. Deployed via GitHub Pages.
+    </div>
+    <div class="project-tech">
+      <span class="inline-tag">Gemini API</span>
+      <span class="inline-tag">GitHub Pages</span>
+    </div>
+  </div>
+</div>
+
+<!-- OTHER WORK -->
+<div class="section">
+  <div class="section-title"><span class="prompt">&gt;</span> cat other_work.log</div>
+  <div class="other-item">
+    <span class="marker">▸</span>
+    <span><strong>WhatsApp integrations</strong> — bots and automation pipelines via Evolution API + n8n</span>
+  </div>
+  <div class="other-item">
+    <span class="marker">▸</span>
+    <span><strong>API automation</strong> — async Python scripts, custom HTTP clients, brute-force testing</span>
+  </div>
+  <div class="other-item">
+    <span class="marker">▸</span>
+    <span><strong>LaTeX technical translation</strong> — 44-page offshore equipment procedure spec (Baker Hughes / GranMorgu) EN → PT-BR</span>
+  </div>
+  <div class="other-item">
+    <span class="marker">▸</span>
+    <span><strong>AI image generation workflows</strong> — prompt engineering for book cover design and illustration</span>
+  </div>
+</div>
+
+<!-- WRITING -->
+<div class="section">
+  <div class="section-title"><span class="prompt">&gt;</span> cat ./writing/novel.md</div>
+  <div class="novel-block">
+    <div class="novel-title">A COLHEITA DE MENTES — ECOS, VOL. 1</div>
+    <p>Cyberpunk novel set in a dystopian city called <span style="color:var(--purple)">Dicotomia</span>. Neon-drenched lower city, corporate heights, a cast of augmented outcasts. Exploring memory, power, and forced evolution.</p>
+    <div class="status">&gt; STATUS: preparing for self-publication via Amazon KDP<span class="blink">_</span></div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <div class="section-title"><span class="prompt">&gt;</span> ping -t ipedrax</div>
+  <div class="terminal-contact">
+    <div class="term-header">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+      <span class="term-title">contact.exe</span>
+    </div>
+    <div class="term-body">
+      <div class="term-line">&gt; INITIATING SECURE CONNECTION...</div>
+      <div class="term-line">&gt; CONNECTION ESTABLISHED.</div>
+      <div class="term-line active">&gt; AWAITING SIGNAL<span class="blink">_</span></div>
+      <div class="contact-links">
+        <a class="contact-link" href="https://www.99freelas.com.br/user/ipedrax" target="_blank">[ 99FREELAS ]</a>
+        <a class="contact-link" href="https://github.com/IPedrax" target="_blank">[ GITHUB ]</a>
+        <a class="contact-link p" href="https://twitter.com/ipedrax" target="_blank">[ TWITTER/X ]</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">SYSTEM.HALT() &nbsp;&middot;&nbsp; © 2026 PEDRO MEDEIROS &nbsp;&middot;&nbsp; DICOTOMIA AWAITS</div>
+
+</body>
+</html>
