@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IPedrax â€” Full-Stack Developer & AI Engineer</title>
+<title>IPedrax — Full-Stack Developer & AI Engineer</title>
 <meta name="description" content="Portfolio of Pedro Medeiros: Full-Stack Developer, AI Engineer, Freelancer.">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
@@ -22,7 +22,6 @@
     --blue-glow: 0 0 8px rgba(0,240,255,0.5);
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   body {
     background: var(--bg);
     color: var(--text);
@@ -46,8 +45,6 @@
     background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.5) 100%);
     pointer-events: none; z-index: 998;
   }
-
-  /* HEADER */
   .header {
     border: 1px solid var(--green);
     padding: 28px 32px; margin-bottom: 32px;
@@ -56,7 +53,7 @@
     background: var(--surface);
   }
   .header::before {
-    content: 'â”Œâ”€ README.md â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€';
+    content: '\250C\2500 README.md \2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500';
     font-size: 10px; color: var(--green);
     position: absolute; top: -9px; left: 0;
     opacity: 0.5; background: var(--bg); padding: 0 4px;
@@ -84,7 +81,6 @@
   .bio-lines p { color: var(--muted); margin-bottom: 5px; font-size: 12px; }
   .hl-g { color: var(--green); } .hl-p { color: var(--purple); } .hl-b { color: var(--blue); }
 
-  /* SECTIONS */
   .section { margin-bottom: 32px; }
   .section-title {
     font-family: var(--font-pixel); font-size: 9px; color: var(--purple);
@@ -95,7 +91,6 @@
   .section-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, rgba(176,38,255,0.4), transparent); }
   .section-title .prompt { color: var(--green); }
 
-  /* STACK */
   .stack-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
   .stack-group { background: var(--surface); border: 1px dashed rgba(57,255,20,0.2); padding: 14px 16px; }
   .stack-label { font-size: 9px; font-family: var(--font-pixel); color: var(--green); margin-bottom: 10px; opacity: 0.8; }
@@ -107,7 +102,6 @@
   .tag.b { border-color: rgba(0,240,255,0.35); color: var(--blue); background: rgba(0,240,255,0.04); }
   .tag.b:hover { background: rgba(0,240,255,0.12); box-shadow: var(--blue-glow); }
 
-  /* PROJECT CARDS */
   .project-card {
     background: var(--surface);
     border: 1px dotted rgba(57,255,20,0.3);
@@ -119,16 +113,9 @@
     box-shadow: 0 0 20px rgba(57,255,20,0.08), 4px 4px 0 rgba(57,255,20,0.1);
     transform: translateX(3px);
   }
-  a.project-card {
-    display: block; text-decoration: none; color: inherit; cursor: pointer;
-  }
-  a.project-card:hover .project-name {
-    text-shadow: 0 0 16px var(--green), var(--green-glow);
-  }
-  a.project-card:hover {
-    border-color: var(--green);
-    box-shadow: 0 0 24px rgba(57,255,20,0.12), 4px 4px 0 rgba(57,255,20,0.15);
-  }
+  a.project-card { display: block; text-decoration: none; color: inherit; cursor: pointer; }
+  a.project-card:hover .project-name { text-shadow: 0 0 16px var(--green), var(--green-glow); }
+  a.project-card:hover { border-color: var(--green); box-shadow: 0 0 24px rgba(57,255,20,0.12), 4px 4px 0 rgba(57,255,20,0.15); }
   .click-hint { font-size: 9px; color: var(--blue); opacity: 0.6; margin-left: 8px; transition: opacity 0.2s; }
   a.project-card:hover .click-hint { opacity: 1; }
 
@@ -138,19 +125,16 @@
   .project-desc code { color: var(--green); font-size: 10px; background: rgba(57,255,20,0.08); padding: 1px 4px; }
   .project-tech { display: flex; flex-wrap: wrap; gap: 4px; }
   .inline-tag { font-size: 9px; background: rgba(57,255,20,0.06); border: 1px solid rgba(57,255,20,0.25); color: rgba(57,255,20,0.7); padding: 1px 7px; }
-
   .feature-list { margin: 10px 0 12px; padding: 0; list-style: none; }
   .feature-list li { font-size: 11px; color: var(--muted); padding: 3px 0 3px 16px; position: relative; }
-  .feature-list li::before { content: 'â–¸'; position: absolute; left: 0; color: var(--green); }
+  .feature-list li::before { content: '\25B8'; position: absolute; left: 0; color: var(--green); }
   .feature-list li strong { color: var(--text); }
 
-  /* OTHER WORK */
   .other-item { display: flex; gap: 12px; padding: 8px 0; border-bottom: 1px dashed rgba(176,38,255,0.12); font-size: 11px; color: var(--muted); }
   .other-item:last-child { border-bottom: none; }
   .other-item .marker { color: var(--green); flex-shrink: 0; }
   .other-item strong { color: var(--text); }
 
-  /* NOVEL */
   a.novel-block {
     border-left: 3px solid var(--purple);
     padding: 16px 20px;
@@ -164,14 +148,13 @@
     transform: translateX(3px);
     border-left-color: #d040ff;
   }
-  .novel-title { font-family: var(--font-pixel); font-size: 9px; color: var(--purple); text-shadow: var(--purple-glow); margin-bottom: 10px; line-height: 1.8; }
+  .novel-title { font-family: var(--font-pixel); font-size: 9px; color: var(--purple); text-shadow: var(--purple-glow); margin-bottom: 4px; line-height: 1.8; }
   .novel-subtitle { font-size: 10px; color: var(--muted); margin-bottom: 10px; letter-spacing: 1px; }
   a.novel-block p { font-size: 11px; color: var(--muted); }
   .novel-status { font-size: 9px; color: var(--green); margin-top: 10px; opacity: 0.9; }
-  .novel-links { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .novel-links { margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; }
   .novel-link { font-size: 9px; color: var(--blue); border: 1px solid rgba(0,240,255,0.4); padding: 2px 8px; opacity: 0.7; }
 
-  /* CONTACT */
   .terminal-contact { background: #000; border: 1px solid #2a2a3a; overflow: hidden; }
   .term-header { background: #111120; border-bottom: 1px solid #2a2a3a; padding: 8px 16px; display: flex; align-items: center; gap: 6px; }
   .dot { width: 10px; height: 10px; border-radius: 50%; }
@@ -199,7 +182,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <div class="header">
   <div class="prompt-line">&gt; INITIALIZING PROFILE SEQUENCE...</div>
   <div class="name-title">IPedrax<span class="blink">_</span></div>
@@ -210,12 +192,11 @@
   </div>
   <div class="bio-lines">
     <p><span class="hl-g">// </span>Freelance developer based in <span class="hl-g">Brazil</span>. Studying Computer Engineering @ <span class="hl-p">IFC</span>.</p>
-    <p><span class="hl-g">// </span>I build things that <span class="hl-b">talk to other things</span> â€” WhatsApp bots, LLM pipelines, REST APIs, full-stack apps.</p>
-    <p><span class="hl-g">// </span>If it involves <span class="hl-p">Claude</span>, <span class="hl-p">OpenAI</span>, <span class="hl-g">n8n</span>, or <span class="hl-g">Evolution API</span>, I'm already interested.</p>
+    <p><span class="hl-g">// </span>I build things that <span class="hl-b">talk to other things</span> &mdash; WhatsApp bots, LLM pipelines, REST APIs, full-stack apps.</p>
+    <p><span class="hl-g">// </span>If it involves <span class="hl-p">Claude</span>, <span class="hl-p">OpenAI</span>, <span class="hl-g">n8n</span>, or <span class="hl-g">Evolution API</span>, I&apos;m already interested.</p>
   </div>
 </div>
 
-<!-- STACK -->
 <div class="section">
   <div class="section-title"><span class="prompt">&gt;</span> cat stack.json</div>
   <div class="stack-grid">
@@ -245,7 +226,7 @@
         <span class="tag g">Embeddings</span>
         <span class="tag g">Vector DBs</span>
         <span class="tag g">Fine-tuning</span>
-        <span class="tag g">Agents</span>
+        <span class="tag g">AI Agents</span>
         <span class="tag g">Tool Use</span>
       </div>
     </div>
@@ -354,7 +335,6 @@
   </div>
 </div>
 
-<!-- PROJECTS -->
 <div class="section">
   <div class="section-title"><span class="prompt">&gt;</span> ls -la ./projects</div>
 
@@ -362,11 +342,11 @@
     <div class="project-header">
       <span class="project-name">MTG Stock Market</span>
     </div>
-    <div class="project-desc">Full-stack Magic: The Gathering card price tracker â€” think Bloomberg Terminal, but for cardboard.</div>
+    <div class="project-desc">Full-stack Magic: The Gathering card price tracker &mdash; think Bloomberg Terminal, but for cardboard.</div>
     <ul class="feature-list">
-      <li><strong>Backend</strong> â€” FastAPI + SQLAlchemy + SQLite. JWT auth, freemium roles, price history, news scraping, ML-based 7-day predictions via scikit-learn.</li>
-      <li><strong>Frontend</strong> â€” React + TypeScript dashboard: trending cards, portfolio tracker, price alerts, community comments, Pro-only AI recommendations engine.</li>
-      <li><strong>Infra</strong> â€” Fully Dockerized (per-service Dockerfiles + docker-compose). PWA-ready with Workbox service worker.</li>
+      <li><strong>Backend</strong> &mdash; FastAPI + SQLAlchemy + SQLite. JWT auth, freemium roles, price history, news scraping, ML-based 7-day predictions via scikit-learn.</li>
+      <li><strong>Frontend</strong> &mdash; React + TypeScript dashboard: trending cards, portfolio tracker, price alerts, community comments, Pro-only AI recommendations engine.</li>
+      <li><strong>Infra</strong> &mdash; Fully Dockerized (per-service Dockerfiles + docker-compose). PWA-ready with Workbox service worker.</li>
     </ul>
     <div class="project-tech">
       <span class="inline-tag">FastAPI</span><span class="inline-tag">SQLAlchemy</span><span class="inline-tag">scikit-learn</span><span class="inline-tag">React</span><span class="inline-tag">TypeScript</span><span class="inline-tag">Docker</span>
@@ -377,11 +357,11 @@
     <div class="project-header">
       <span class="project-name">MTG Deck Builder</span>
     </div>
-    <div class="project-desc">AI-powered deck construction tool â€” Gemini 2.5 Pro as the backbone.</div>
+    <div class="project-desc">AI-powered deck construction tool &mdash; Gemini 2.5 Pro as the backbone.</div>
     <ul class="feature-list">
       <li>Generates complete 60/100-card decklists from user parameters (format, power level, playstyle, colors, commander).</li>
-      <li><strong>RAG loop</strong> â€” Gemini calls a local <code>searchLocalDatabase</code> tool to verify card legality and prices mid-generation.</li>
-      <li>Deck upgrade analysis â€” paste a list, get 6â€“12 prioritized 1-for-1 swap recommendations.</li>
+      <li><strong>RAG loop</strong> &mdash; Gemini calls a local <code>searchLocalDatabase</code> tool to verify card legality and prices mid-generation.</li>
+      <li>Deck upgrade analysis &mdash; paste a list, get 6&ndash;12 prioritized 1-for-1 swap recommendations.</li>
       <li>Full auth (JWT), card hover tooltips, deck vault, AI upgrade sidebar.</li>
     </ul>
     <div class="project-tech">
@@ -389,21 +369,20 @@
     </div>
   </div>
 
-  <!-- TALENT ADS â€” entire card is a link -->
   <a class="project-card" href="https://talentads.com.br" target="_blank" rel="noopener noreferrer">
     <div class="project-header">
       <span class="project-name">Talent ADS</span>
-      <span class="click-hint">â†— talentads.com.br</span>
+      <span class="click-hint">&#8599; talentads.com.br</span>
     </div>
-    <div class="project-desc">Full-stack HR SaaS platform â€” AI-powered talent intelligence for companies, candidates, and headhunters. Three distinct dashboards, one unified backend.</div>
+    <div class="project-desc">Full-stack HR SaaS platform &mdash; AI-powered talent intelligence for companies, candidates, and headhunters. Three distinct dashboards, one unified backend.</div>
     <ul class="feature-list">
-      <li><strong>CV analysis engine</strong> â€” AI parses uploaded CVs against job descriptions, scoring match %, generating radar charts (skills, culture fit, seniority), salary valuations.</li>
-      <li><strong>HR dashboard</strong> â€” job posting, unlimited CV batch upload, side-by-side candidate comparison, AI-generated interview questions, internal talent bank, team management, culture setup.</li>
-      <li><strong>Candidate dashboard</strong> â€” market salary estimation, job matching, AI-powered CV improvement suggestions, real-time application tracking.</li>
-      <li><strong>Headhunter directory</strong> â€” recruiter profile pages, direct WhatsApp contact integration.</li>
-      <li><strong>Summit platform</strong> â€” event module for Congresso Talent Intelligence Brasil: registration, exhibitor pages, admin CRM, n8n email campaign workflows.</li>
-      <li><strong>Token billing</strong> â€” credit-based usage with Netcred payment integration.</li>
-      <li><strong>Infra</strong> â€” React + TypeScript + Vite, Express + SQLite, Nginx reverse proxy, Docker Compose.</li>
+      <li><strong>CV analysis engine</strong> &mdash; AI parses uploaded CVs against job descriptions, scoring match %, generating radar charts (skills, culture fit, seniority), salary valuations.</li>
+      <li><strong>HR dashboard</strong> &mdash; job posting, unlimited CV batch upload, side-by-side candidate comparison, AI-generated interview questions, internal talent bank, team management, culture setup.</li>
+      <li><strong>Candidate dashboard</strong> &mdash; market salary estimation, job matching, AI-powered CV improvement suggestions, real-time application tracking.</li>
+      <li><strong>Headhunter directory</strong> &mdash; recruiter profile pages, direct WhatsApp contact integration.</li>
+      <li><strong>Summit platform</strong> &mdash; event module for Congresso Talent Intelligence Brasil: registration, exhibitor pages, admin CRM, n8n email campaign workflows.</li>
+      <li><strong>Token billing</strong> &mdash; credit-based usage with Netcred payment integration.</li>
+      <li><strong>Infra</strong> &mdash; React + TypeScript + Vite, Express + SQLite, Nginx reverse proxy, Docker Compose.</li>
     </ul>
     <div class="project-tech">
       <span class="inline-tag">React</span><span class="inline-tag">TypeScript</span><span class="inline-tag">Express</span><span class="inline-tag">SQLite</span><span class="inline-tag">n8n</span><span class="inline-tag">Docker</span><span class="inline-tag">Nginx</span>
@@ -411,34 +390,32 @@
   </a>
 </div>
 
-<!-- OTHER WORK -->
 <div class="section">
   <div class="section-title"><span class="prompt">&gt;</span> cat other_work.log</div>
-  <div class="other-item"><span class="marker">â–¸</span><span><strong>AI chatbot backends</strong> â€” multi-tenant Claude/OpenAI-powered assistants with conversation memory, tool use, and webhook delivery via FastAPI</span></div>
-  <div class="other-item"><span class="marker">â–¸</span><span><strong>WhatsApp AI agents</strong> â€” autonomous sales and support bots using Evolution API + n8n + LLM routing, deployed for Brazilian SMBs</span></div>
-  <div class="other-item"><span class="marker">â–¸</span><span><strong>RAG pipelines</strong> â€” document ingestion, chunking, embedding, and semantic search over private knowledge bases (ChromaDB / Pinecone)</span></div>
-  <div class="other-item"><span class="marker">â–¸</span><span><strong>Full-stack SaaS MVPs</strong> â€” end-to-end product builds: auth, billing, dashboards, REST APIs, Docker deployment â€” from spec to production</span></div>
-  <div class="other-item"><span class="marker">â–¸</span><span><strong>API penetration testing</strong> â€” authorized async brute-force scripting, endpoint recon, auth bypass testing, and structured vulnerability reporting</span></div>
-  <div class="other-item"><span class="marker">â–¸</span><span><strong>Automation pipelines</strong> â€” n8n workflows connecting CRMs, email campaigns, webhooks, and third-party APIs with zero-code orchestration</span></div>
-  <div class="other-item"><span class="marker">â–¸</span><span><strong>LLM prompt engineering</strong> â€” system prompt design, few-shot tuning, structured output schemas, and evaluation harnesses for production LLM apps</span></div>
-  <div class="other-item"><span class="marker">â–¸</span><span><strong>Data scraping &amp; enrichment</strong> â€” async Python scrapers, headless browser automation, and structured data pipelines for lead generation and market research</span></div>
+  <div class="other-item"><span class="marker">&#9656;</span><span><strong>AI chatbot backends</strong> &mdash; multi-tenant Claude/OpenAI-powered assistants with conversation memory, tool use, and webhook delivery via FastAPI</span></div>
+  <div class="other-item"><span class="marker">&#9656;</span><span><strong>WhatsApp AI agents</strong> &mdash; autonomous sales and support bots using Evolution API + n8n + LLM routing, deployed for Brazilian SMBs</span></div>
+  <div class="other-item"><span class="marker">&#9656;</span><span><strong>RAG pipelines</strong> &mdash; document ingestion, chunking, embedding, and semantic search over private knowledge bases (ChromaDB / Pinecone)</span></div>
+  <div class="other-item"><span class="marker">&#9656;</span><span><strong>Full-stack SaaS MVPs</strong> &mdash; end-to-end product builds: auth, billing, dashboards, REST APIs, Docker deployment &mdash; from spec to production</span></div>
+  <div class="other-item"><span class="marker">&#9656;</span><span><strong>API penetration testing</strong> &mdash; authorized async brute-force scripting, endpoint recon, auth bypass testing, and structured vulnerability reporting</span></div>
+  <div class="other-item"><span class="marker">&#9656;</span><span><strong>Automation pipelines</strong> &mdash; n8n workflows connecting CRMs, email campaigns, webhooks, and third-party APIs with zero-code orchestration</span></div>
+  <div class="other-item"><span class="marker">&#9656;</span><span><strong>LLM prompt engineering</strong> &mdash; system prompt design, few-shot tuning, structured output schemas, and evaluation harnesses for production LLM apps</span></div>
+  <div class="other-item"><span class="marker">&#9656;</span><span><strong>Data scraping &amp; enrichment</strong> &mdash; async Python scrapers, headless browser automation, and structured data pipelines for lead generation and market research</span></div>
 </div>
 
-<!-- WRITING -->
 <div class="section">
   <div class="section-title"><span class="prompt">&gt;</span> cat ./writing/novel.md</div>
   <a class="novel-block" href="https://www.amazon.com.br/dp/B0GR9894D5" target="_blank" rel="noopener noreferrer">
-    <div class="novel-title">THE HARVEST OF MINDS — ECOS, VOL. 1</div><div class="novel-subtitle">A Colheita de Mentes</div>
+    <div class="novel-title">THE HARVEST OF MINDS &mdash; ECOS, VOL. 1</div>
+    <div class="novel-subtitle">A Colheita de Mentes</div>
     <p>Cyberpunk novel set in a dystopian city called <span class="hl-p">Dicotomia</span>. Neon-drenched lower city, corporate heights, a cast of augmented outcasts. Exploring memory, power, and forced evolution.</p>
-    <div class="novel-status">&gt; STATUS: PUBLISHED â€” available on Amazon KDP<span class="blink">_</span></div>
+    <div class="novel-status">&gt; STATUS: PUBLISHED &mdash; available on Amazon KDP<span class="blink">_</span></div>
     <div class="novel-links">
-      <span class="novel-link">â†— amazon.com.br</span>
-      <span class="novel-link">â†— amazon.com</span>
+      <span class="novel-link">&#8599; amazon.com.br</span>
+      <span class="novel-link">&#8599; amazon.com</span>
     </div>
   </a>
 </div>
 
-<!-- CONTACT -->
 <div class="section">
   <div class="section-title"><span class="prompt">&gt;</span> ping -t ipedrax</div>
   <div class="terminal-contact">
@@ -459,10 +436,7 @@
   </div>
 </div>
 
-<div class="footer">SYSTEM.HALT() &nbsp;&middot;&nbsp; Â© 2026 PEDRO MEDEIROS &nbsp;&middot;&nbsp; DICOTOMIA AWAITS</div>
+<div class="footer">SYSTEM.HALT() &nbsp;&middot;&nbsp; &copy; 2026 PEDRO MEDEIROS &nbsp;&middot;&nbsp; DICOTOMIA AWAITS</div>
 
 </body>
 </html>
-
-
-
