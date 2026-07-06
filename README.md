@@ -1,4 +1,6 @@
-> **[-> View the full interactive version](https://ipedrax.github.io/IPedrax/)**
+[![ipedrax.com.br — Pedro Medeiros, Author / Developer / AI Engineer](https://ipedrax.com.br/img/og-card.png)](https://ipedrax.com.br)
+
+> **[-> ipedrax.com.br — ENTER THE MAINFRAME](https://ipedrax.com.br)** · [interactive profile](https://ipedrax.github.io/IPedrax/)
 
 ---
 
@@ -11,9 +13,9 @@
 ╚═╝╚═╝     ╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
 ```
 
-![Badge](https://img.shields.io/badge/FULL--STACK_DEV-39ff14?style=for-the-badge&labelColor=050510&color=39ff14)
-![Badge](https://img.shields.io/badge/AI_ENGINEER-b026ff?style=for-the-badge&labelColor=050510&color=b026ff)
-![Badge](https://img.shields.io/badge/FREELANCER-00f0ff?style=for-the-badge&labelColor=050510&color=00f0ff)
+![Badge](https://img.shields.io/badge/FULL--STACK_DEV-00f0ff?style=for-the-badge&labelColor=06030f&color=00f0ff)
+![Badge](https://img.shields.io/badge/AI_ENGINEER-ff2bd6?style=for-the-badge&labelColor=06030f&color=ff2bd6)
+![Badge](https://img.shields.io/badge/FREELANCER-fcee0a?style=for-the-badge&labelColor=06030f&color=fcee0a)
 
 ```
 // Freelance developer based in Brazil. Studying Computer Engineering @ IFC.
@@ -108,8 +110,8 @@ STATUS : PUBLISHED
 
 > Exploring memory, power, and forced evolution through a cast of augmented outcasts.
 
-[![Amazon BR](https://img.shields.io/badge/AMAZON.COM.BR-b026ff?style=for-the-badge&labelColor=050510)](https://www.amazon.com.br/dp/B0GR9894D5)
-[![Amazon COM](https://img.shields.io/badge/AMAZON.COM-39ff14?style=for-the-badge&labelColor=050510)](https://www.amazon.com/dp/B0GR9MPRLR)
+[![Amazon BR](https://img.shields.io/badge/AMAZON.COM.BR-ff2bd6?style=for-the-badge&labelColor=06030f)](https://www.amazon.com.br/dp/B0GR9894D5)
+[![Amazon COM](https://img.shields.io/badge/AMAZON.COM-00f0ff?style=for-the-badge&labelColor=06030f)](https://www.amazon.com/dp/B0GR9MPRLR)
 
 ---
 
@@ -121,9 +123,10 @@ STATUS : PUBLISHED
 > AWAITING SIGNAL_
 ```
 
-[![99Freelas](https://img.shields.io/badge/99FREELAS-39ff14?style=for-the-badge&labelColor=050510)](https://www.99freelas.com.br/user/ipedrax)
-[![GitHub](https://img.shields.io/badge/GITHUB-39ff14?style=for-the-badge&labelColor=050510)](https://github.com/IPedrax)
-[![Twitter](https://img.shields.io/badge/TWITTER%2FX-b026ff?style=for-the-badge&labelColor=050510)](https://twitter.com/ipedrax)
+[![Website](https://img.shields.io/badge/IPEDRAX.COM.BR-fcee0a?style=for-the-badge&labelColor=06030f)](https://ipedrax.com.br)
+[![99Freelas](https://img.shields.io/badge/99FREELAS-00f0ff?style=for-the-badge&labelColor=06030f)](https://www.99freelas.com.br/user/ipedrax)
+[![GitHub](https://img.shields.io/badge/GITHUB-00f0ff?style=for-the-badge&labelColor=06030f)](https://github.com/IPedrax)
+[![Twitter](https://img.shields.io/badge/TWITTER%2FX-ff2bd6?style=for-the-badge&labelColor=06030f)](https://twitter.com/ipedrax)
 
 ---
 
