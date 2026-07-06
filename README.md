@@ -1,6 +1,6 @@
 [![ipedrax.com.br — Pedro Medeiros, Author / Developer / AI Engineer](https://ipedrax.com.br/img/og-card.png)](https://ipedrax.com.br)
 
-> **[-> ipedrax.com.br — ENTER THE MAINFRAME](https://ipedrax.com.br)** · [interactive profile](https://ipedrax.github.io/IPedrax/)
+> **[-> ipedrax.com.br — ENTER THE MAINFRAME](https://ipedrax.com.br)**
 
 ---
 
