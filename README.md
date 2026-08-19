@@ -121,6 +121,73 @@ STATUS : PUBLISHED
 
 ---
 
+### [MoneyControl](https://ipedrax.com.br/moneycontrol/) -- Personal & Business Finance
+
+> Mission control for money: personal budgets, savings goals and business invoicing in one dark-first cockpit.
+
+- Accounts, transactions, budgets, goals and recurring expenses, split across personal and business scopes.
+- Client directory, invoicing and line items for the freelance side of the ledger.
+- Shared single sign-on with the rest of the platform; every query scoped by owner.
+
+`Express` `TypeScript` `Drizzle` `PostgreSQL` `React` `Zod` `Docker`
+
+---
+
+### [Dopamine](https://ipedrax.com.br/dopamine/) -- Shopping Simulator
+
+> The experience of online shopping, without spending real money.
+
+- Thousands of real products across four parody marketplace skins, with a full cart and "checkout" flow.
+- **Hard safety invariant** -- no payments, no personal data, no real purchases, enforced by a `connect-src 'self'` CSP that blocks every off-origin request at the browser level.
+- Offline-capable: ships with a bundled catalog seed and needs no external API to run.
+
+`React` `TypeScript` `Vite` `CSP` `Docker`
+
+---
+
+### [Link Shortener & QR Generator](https://ipedrax.com.br/shortener/) -- Free, No Account
+
+> Paste a URL, get a short link and its QR code in one step. No account, no ads, no tracking pixels.
+
+- Custom aliases, click counts, and a delete token that is the only proof of ownership (no accounts to breach).
+- Generated share cards name the **real destination**, because a shortener that hides where it goes is a phishing tool.
+- Rejects every scheme but `http`/`https`, rate limited per address.
+
+`FastAPI` `PostgreSQL` `segno` `Pillow` `Docker`
+
+---
+
+## `> ls -la ./open_source`
+
+Claude skills and tooling, all public:
+
+| Repo | What it does |
+|---|---|
+| [AetherTable](https://github.com/IPedrax/AetherTable) | Multi-provider AI Game Master for tabletop RPGs |
+| [OmniSkill](https://github.com/IPedrax/OmniSkill) | 42 specialist skills across 7 departments, one workforce |
+| [CyberSECC](https://github.com/IPedrax/CyberSECC) | Full-spectrum security: audit, red/blue team, CTF, reporting |
+| [Storytelling](https://github.com/IPedrax/Storytelling) | Worldbuilding and fiction companion backed by an Obsidian vault |
+| [llm-council](https://github.com/IPedrax/llm-council) | Run a decision past a council of AI advisors that peer-review each other |
+| [motion-ui](https://github.com/IPedrax/motion-ui) | Framer Motion / GSAP / anime.js / Three.js animation engineering |
+| [OSINT](https://github.com/IPedrax/OSINT) | Scoped open-source intelligence with graded findings and provenance |
+| [Obsidian](https://github.com/IPedrax/Obsidian) | Persistent file-based memory vault for agents |
+| [color-analysts](https://github.com/IPedrax/color-analysts) | 12-season personal colour analysis from a photo |
+| [MTG-Card-Downloader](https://github.com/IPedrax/MTG-Card-Downloader) | Bulk Magic card image and data acquisition |
+
+---
+
+## `> cat clients.log`
+
+Shipped for paying clients:
+
+- **[Talent ADS](https://talentads.com.br)** -- HR talent-intelligence SaaS (detailed above)
+- **[Talent Summit](https://talentsummit.com.br)** -- event platform for Congresso Talent Intelligence Brasil
+- **[A Toca BCG](https://atocabcg.com.br)** -- trading-card game storefront
+- **[E.C Estrategia Criativa](https://ecagencia.com.br)** -- advertising agency site
+- **[La Crochet](https://lacrochet.com.br)** -- handmade crochet storefront with Mercado Pago checkout
+
+---
+
 ## `> cat other_work.log`
 
 ```
