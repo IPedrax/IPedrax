@@ -106,21 +106,6 @@ STATUS : PUBLISHED
 
 ---
 
-### [Talent ADS](https://talentads.com.br) -- HR SaaS Platform
-
-> Full-stack talent intelligence platform for companies, candidates, and headhunters. Three distinct user dashboards, one unified backend.
-
-- **CV analysis engine** -- AI parses uploaded CVs against job descriptions, scoring match %, generating radar charts (skills, culture fit, seniority), salary valuations.
-- **HR dashboard** -- job posting, unlimited CV batch upload, side-by-side candidate comparison, AI-generated interview questions, internal talent bank, team management, culture setup.
-- **Candidate dashboard** -- market salary estimation, job matching, AI-powered CV improvement suggestions, real-time application tracking.
-- **Headhunter directory** -- recruiter profile pages, direct WhatsApp contact integration.
-- **Summit platform** -- event module for Congresso Talent Intelligence Brasil: registration, exhibitor pages, admin CRM, n8n email campaign workflows.
-- **Token billing** -- credit-based usage with Netcred payment integration.
-
-`React` `TypeScript` `Express` `SQLite` `n8n` `Docker` `Nginx`
-
----
-
 ### [MoneyControl](https://ipedrax.com.br/moneycontrol/) -- Personal & Business Finance
 
 > Mission control for money: personal budgets, savings goals and business invoicing in one dark-first cockpit.
@@ -180,8 +165,8 @@ Claude skills and tooling, all public:
 
 Shipped for paying clients:
 
-- **[Talent ADS](https://talentads.com.br)** -- HR talent-intelligence SaaS (detailed above)
-- **[Talent Summit](https://talentsummit.com.br)** -- event platform for Congresso Talent Intelligence Brasil
+- **[Talent ADS](https://talentads.com.br)** -- HR talent-intelligence SaaS. Three dashboards (company, candidate, headhunter) on one backend: AI CV-vs-vacancy scoring with skills/culture/seniority radars and salary valuation, batch upload and side-by-side comparison, AI interview questions, credit-based token billing. `React` `TypeScript` `Express` `n8n` `Docker`
+- **[Talent Summit](https://talentsummit.com.br)** -- event platform for Congresso Talent Intelligence Brasil: registration, exhibitor pages, admin CRM, n8n email campaigns
 - **[A Toca BCG](https://atocabcg.com.br)** -- trading-card game storefront
 - **[E.C Estrategia Criativa](https://ecagencia.com.br)** -- advertising agency site
 - **[La Crochet](https://lacrochet.com.br)** -- handmade crochet storefront with Mercado Pago checkout
