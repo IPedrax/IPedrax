@@ -1,4 +1,4 @@
-> **[-> ipedrax.com.br](https://ipedrax.com.br)** &nbsp;|&nbsp; [interactive version](https://ipedrax.github.io/IPedrax/)
+> **[-> ipedrax.com.br](https://ipedrax.com.br)**
 
 ---
 
