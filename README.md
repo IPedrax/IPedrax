@@ -1,6 +1,4 @@
-[![ipedrax.com.br — Pedro Medeiros, Author / Developer / AI Engineer](https://ipedrax.com.br/img/og-card.png)](https://ipedrax.com.br)
-
-> **[-> ipedrax.com.br — ENTER THE MAINFRAME](https://ipedrax.com.br)**
+> **[-> ipedrax.com.br](https://ipedrax.com.br)** &nbsp;|&nbsp; [interactive version](https://ipedrax.github.io/IPedrax/)
 
 ---
 
@@ -13,15 +11,40 @@
 ╚═╝╚═╝     ╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
 ```
 
-![Badge](https://img.shields.io/badge/FULL--STACK_DEV-00f0ff?style=for-the-badge&labelColor=06030f&color=00f0ff)
-![Badge](https://img.shields.io/badge/AI_ENGINEER-ff2bd6?style=for-the-badge&labelColor=06030f&color=ff2bd6)
-![Badge](https://img.shields.io/badge/FREELANCER-fcee0a?style=for-the-badge&labelColor=06030f&color=fcee0a)
+![Badge](https://img.shields.io/badge/SCI--FI_AUTHOR-ff2bd6?style=for-the-badge&labelColor=050510&color=ff2bd6)
+![Badge](https://img.shields.io/badge/AI_ENGINEER-b026ff?style=for-the-badge&labelColor=050510&color=b026ff)
+![Badge](https://img.shields.io/badge/FULL--STACK_DEV-39ff14?style=for-the-badge&labelColor=050510&color=39ff14)
+![Badge](https://img.shields.io/badge/FREELANCER-00f0ff?style=for-the-badge&labelColor=050510&color=00f0ff)
+
+**Pedro Medeiros (IPedrax) is a Brazilian science-fiction author and AI engineer.**
+He is the author of *The Harvest of Minds (A Colheita de Mentes)*, a cyberpunk novel,
+and builds AI tools, autonomous agents and full-stack web applications. He studies
+Computer Engineering at IFC and works as a freelance developer in Brazil.
+
+Live apps, projects and writing: **[ipedrax.com.br](https://ipedrax.com.br)**
 
 ```
-// Freelance developer based in Brazil. Studying Computer Engineering @ IFC.
+// Two crafts, one obsession: systems that think, and worlds that breathe.
 // From zero to deployed -- backends, frontends, AI integrations, and everything in between.
 // If it thinks, automates, or integrates -- I'm the one building it.
 ```
+
+---
+
+## `> cat ./writing/novel.md`
+
+```
+TITLE  : THE HARVEST OF MINDS -- ECOS, VOL. 1
+         (A Colheita de Mentes)
+GENRE  : Cyberpunk / Science Fiction
+SETTING: Dicotomia -- a dystopian megacity split between neon-drenched lower city and corporate heights
+STATUS : PUBLISHED
+```
+
+> Exploring memory, power, and forced evolution through a cast of augmented outcasts.
+
+[![Amazon BR](https://img.shields.io/badge/AMAZON.COM.BR-b026ff?style=for-the-badge&labelColor=050510)](https://www.amazon.com.br/dp/B0GR9894D5)
+[![Amazon COM](https://img.shields.io/badge/AMAZON.COM-39ff14?style=for-the-badge&labelColor=050510)](https://www.amazon.com/dp/B0GR9MPRLR)
 
 ---
 
@@ -43,7 +66,22 @@
 
 ## `> ls -la ./projects`
 
-### MTG Stock Market
+### [AetherTable](https://ipedrax.com.br/rpg/) -- AI Dungeon Master
+
+> Play tabletop RPGs with an AI game master that narrates, remembers the campaign, and rolls real dice. Open source, bring-your-own-key.
+
+- **Multi-provider** -- Gemini, OpenAI, Ollama or LM Studio behind one interface; runs fully local if you want it to.
+- **Persistent saga memory** -- rolling summarization folds old turns into long-term memory so campaigns survive context limits.
+- **Voice mode** -- speech in, narrated speech out, over a WebSocket stream.
+- **Real dice** -- the model emits `[[ROLL:1d20+5]]` tags resolved by code, so it can never invent a number.
+
+`FastAPI` `Gemini` `React` `TypeScript` `PostgreSQL` `WebSockets` `Docker`
+
+[![Repo](https://img.shields.io/badge/SOURCE-b026ff?style=for-the-badge&labelColor=050510)](https://github.com/IPedrax/AetherTable)
+
+---
+
+### [MTG Stock Market](https://ipedrax.com.br/market/) -- Arcane Exchange
 
 > Full-stack Magic: The Gathering card price tracker -- think Bloomberg Terminal, but for cardboard.
 
@@ -55,7 +93,7 @@
 
 ---
 
-### MTG Deck Builder
+### [MTG Deck Builder](https://ipedrax.com.br/decks/) -- MythicForge
 
 > AI-powered deck construction tool -- Gemini 2.5 Pro as the backbone.
 
@@ -98,23 +136,6 @@
 
 ---
 
-## `> cat ./writing/novel.md`
-
-```
-TITLE  : THE HARVEST OF MINDS -- ECOS, VOL. 1
-         (A Colheita de Mentes)
-GENRE  : Cyberpunk / Science Fiction
-SETTING: Dicotomia -- a dystopian megacity split between neon-drenched lower city and corporate heights
-STATUS : PUBLISHED
-```
-
-> Exploring memory, power, and forced evolution through a cast of augmented outcasts.
-
-[![Amazon BR](https://img.shields.io/badge/AMAZON.COM.BR-ff2bd6?style=for-the-badge&labelColor=06030f)](https://www.amazon.com.br/dp/B0GR9894D5)
-[![Amazon COM](https://img.shields.io/badge/AMAZON.COM-00f0ff?style=for-the-badge&labelColor=06030f)](https://www.amazon.com/dp/B0GR9MPRLR)
-
----
-
 ## `> ping -t ipedrax`
 
 ```
@@ -123,10 +144,10 @@ STATUS : PUBLISHED
 > AWAITING SIGNAL_
 ```
 
-[![Website](https://img.shields.io/badge/IPEDRAX.COM.BR-fcee0a?style=for-the-badge&labelColor=06030f)](https://ipedrax.com.br)
-[![99Freelas](https://img.shields.io/badge/99FREELAS-00f0ff?style=for-the-badge&labelColor=06030f)](https://www.99freelas.com.br/user/ipedrax)
-[![GitHub](https://img.shields.io/badge/GITHUB-00f0ff?style=for-the-badge&labelColor=06030f)](https://github.com/IPedrax)
-[![Twitter](https://img.shields.io/badge/TWITTER%2FX-ff2bd6?style=for-the-badge&labelColor=06030f)](https://twitter.com/ipedrax)
+[![Email](https://img.shields.io/badge/pedro.medeiros@ipedrax.com.br-00f0ff?style=for-the-badge&labelColor=050510)](mailto:pedro.medeiros@ipedrax.com.br)
+[![99Freelas](https://img.shields.io/badge/99FREELAS-39ff14?style=for-the-badge&labelColor=050510)](https://www.99freelas.com.br/user/ipedrax)
+[![GitHub](https://img.shields.io/badge/GITHUB-39ff14?style=for-the-badge&labelColor=050510)](https://github.com/IPedrax)
+[![Twitter](https://img.shields.io/badge/TWITTER%2FX-b026ff?style=for-the-badge&labelColor=050510)](https://twitter.com/ipedrax)
 
 ---
 
