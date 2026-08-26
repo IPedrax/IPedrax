@@ -158,6 +158,7 @@ Claude skills and tooling, all public:
 | [Obsidian](https://github.com/IPedrax/Obsidian) | Persistent file-based memory vault for agents |
 | [color-analysts](https://github.com/IPedrax/color-analysts) | 12-season personal colour analysis from a photo |
 | [MTG-Card-Downloader](https://github.com/IPedrax/MTG-Card-Downloader) | Bulk Magic card image and data acquisition |
+| [WindowsBackCatalog](https://github.com/IPedrax/WindowsBackCatalog) | Every Windows ISO Microsoft still hosts but stopped listing, back in the dropdown |
 
 ---
 
