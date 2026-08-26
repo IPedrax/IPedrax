@@ -1,4 +1,4 @@
-> **[-> ipedrax.com.br](https://ipedrax.com.br)**
+> **[-> ipedrax.com.br](https://ipedrax.com.br)** &nbsp;|&nbsp; [interactive version](https://ipedrax.github.io/IPedrax/)
 
 ---
 
@@ -93,16 +93,16 @@ STATUS : PUBLISHED
 
 ---
 
-### [MTG Deck Builder](https://ipedrax.com.br/decks/) -- MythicForge
+### [Windows Back Catalog](https://github.com/IPedrax/WindowsBackCatalog) -- Every Windows ISO, Back in the Dropdown
 
-> AI-powered deck construction tool -- Gemini 2.5 Pro as the backbone.
+> Microsoft still hosts the ISO for every Windows release it ever shipped. The download page just stopped listing them. This puts them back.
 
-- Generates complete 60/100-card decklists from user parameters (format, power level, playstyle, colors, commander).
-- **RAG loop** -- Gemini calls a local `searchLocalDatabase` tool to verify card legality and prices mid-generation.
-- Deck upgrade analysis -- paste a list, get 6-12 prioritized 1-for-1 swap recommendations.
-- Full auth (JWT), card hover tooltips, deck vault, AI upgrade sidebar.
+- One console snippet, or a bookmarklet, rewrites the edition dropdown on Microsoft's own download page with the product-edition IDs it quietly stopped listing.
+- **Windows 7 SP1, 8.1, 10 22H2 and Windows 11 24H2/25H2** in x64 and Arm64, straight from Microsoft's CDN: no third-party mirror, no torrent, no bundled "activator".
+- **Not a downloader and not a bypass** -- it only repopulates a `<select>` and fires a `change` event; Microsoft's own flow issues the signed link.
+- Documents what will bite you: VPN and datacenter IPs get refused, links expire in 24 hours, and an ISO is still not a licence.
 
-`Gemini` `RAG` `Express` `React` `TypeScript` `SQLite` `Docker`
+`JavaScript` `Bookmarklet` `DevTools`
 
 ---
 
@@ -158,7 +158,6 @@ Claude skills and tooling, all public:
 | [Obsidian](https://github.com/IPedrax/Obsidian) | Persistent file-based memory vault for agents |
 | [color-analysts](https://github.com/IPedrax/color-analysts) | 12-season personal colour analysis from a photo |
 | [MTG-Card-Downloader](https://github.com/IPedrax/MTG-Card-Downloader) | Bulk Magic card image and data acquisition |
-| [WindowsBackCatalog](https://github.com/IPedrax/WindowsBackCatalog) | Every Windows ISO Microsoft still hosts but stopped listing, back in the dropdown |
 
 ---
 
