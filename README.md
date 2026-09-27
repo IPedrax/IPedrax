@@ -1,4 +1,4 @@
-> **[-> ipedrax.com.br](https://ipedrax.com.br)** &nbsp;|&nbsp; [interactive version](https://ipedrax.github.io/IPedrax/)
+> **[-> ipedrax.com](https://ipedrax.com)** &nbsp;|&nbsp; [interactive version](https://ipedrax.github.io/IPedrax/)
 
 ---
 
@@ -21,7 +21,7 @@ He is the author of *The Harvest of Minds (A Colheita de Mentes)*, a cyberpunk n
 and builds AI tools, autonomous agents and full-stack web applications. He studies
 Computer Engineering at IFC and works as a freelance developer in Brazil.
 
-Live apps, projects and writing: **[ipedrax.com.br](https://ipedrax.com.br)**
+Live apps, projects and writing: **[ipedrax.com](https://ipedrax.com)**
 
 ```
 // Two crafts, one obsession: systems that think, and worlds that breathe.
@@ -66,7 +66,7 @@ STATUS : PUBLISHED
 
 ## `> ls -la ./projects`
 
-### [AetherTable](https://ipedrax.com.br/rpg/) -- AI Dungeon Master
+### [AetherTable](https://ipedrax.com/rpg/) -- AI Dungeon Master
 
 > Play tabletop RPGs with an AI game master that narrates, remembers the campaign, and rolls real dice. Open source, bring-your-own-key.
 
@@ -81,7 +81,7 @@ STATUS : PUBLISHED
 
 ---
 
-### [MTG Stock Market](https://ipedrax.com.br/market/) -- Arcane Exchange
+### [MTG Stock Market](https://ipedrax.com/market/) -- Arcane Exchange
 
 > Full-stack Magic: The Gathering card price tracker -- think Bloomberg Terminal, but for cardboard.
 
@@ -106,7 +106,7 @@ STATUS : PUBLISHED
 
 ---
 
-### [MoneyControl](https://ipedrax.com.br/moneycontrol/) -- Personal & Business Finance
+### [MoneyControl](https://ipedrax.com/moneycontrol/) -- Personal & Business Finance
 
 > Mission control for money: personal budgets, savings goals and business invoicing in one dark-first cockpit.
 
@@ -118,7 +118,7 @@ STATUS : PUBLISHED
 
 ---
 
-### [Dopamine](https://ipedrax.com.br/dopamine/) -- Shopping Simulator
+### [Dopamine](https://ipedrax.com/dopamine/) -- Shopping Simulator
 
 > The experience of online shopping, without spending real money.
 
@@ -130,7 +130,7 @@ STATUS : PUBLISHED
 
 ---
 
-### [Link Shortener & QR Generator](https://ipedrax.com.br/shortener/) -- Free, No Account
+### [Link Shortener & QR Generator](https://ipedrax.com/shortener/) -- Free, No Account
 
 > Paste a URL, get a short link and its QR code in one step. No account, no ads, no tracking pixels.
 
@@ -196,7 +196,7 @@ Shipped for paying clients:
 > AWAITING SIGNAL_
 ```
 
-[![Email](https://img.shields.io/badge/pedro.medeiros@ipedrax.com.br-00f0ff?style=for-the-badge&labelColor=050510)](mailto:pedro.medeiros@ipedrax.com.br)
+[![Email](https://img.shields.io/badge/pedro.medeiros@ipedrax.com-00f0ff?style=for-the-badge&labelColor=050510)](mailto:pedro.medeiros@ipedrax.com)
 [![99Freelas](https://img.shields.io/badge/99FREELAS-39ff14?style=for-the-badge&labelColor=050510)](https://www.99freelas.com.br/user/ipedrax)
 [![GitHub](https://img.shields.io/badge/GITHUB-39ff14?style=for-the-badge&labelColor=050510)](https://github.com/IPedrax)
 [![Twitter](https://img.shields.io/badge/TWITTER%2FX-b026ff?style=for-the-badge&labelColor=050510)](https://twitter.com/ipedrax)
