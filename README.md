@@ -161,6 +161,7 @@ Shipped for paying clients:
 - **[A Toca BCG](https://atocabcg.com.br)**: trading-card game storefront
 - **[E.C Estrategia Criativa](https://ecagencia.com.br)**: advertising agency site
 - **[La Crochet](https://lacrochet.com.br)**: handmade crochet storefront with Mercado Pago checkout
+- **[MontSerrat Cervejaria](https://cervejariamontserrat.com.br)**: craft brewery and mountain restaurant: table booking on a map of the dining room, customer accounts, and a staff panel for the menu, events, brewery tours and email campaigns. `Next.js` `SQLite` `Docker`
 
 ---
 
