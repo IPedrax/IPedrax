@@ -142,6 +142,7 @@ Claude skills and tooling, all public. No black boxes: read every line.
 | [AetherTable](https://github.com/IPedrax/AetherTable) | Multi-provider AI Game Master for tabletop RPGs |
 | [OmniSkill](https://github.com/IPedrax/OmniSkill) | 49 specialist skills across 7 departments, behind one router |
 | [CyberSECC](https://github.com/IPedrax/CyberSECC) | Full-spectrum security: audit, red/blue team, CTF, reporting |
+| [ComplianceHelper](https://github.com/IPedrax/ComplianceHelper) | Compliance gaps in code and running apps, mapped to SOC 2, GDPR, LGPD, PCI DSS and more; hooks re-check every edit |
 | [Storytelling](https://github.com/IPedrax/Storytelling) | Worldbuilding and fiction companion backed by an Obsidian vault |
 | [llm-council](https://github.com/IPedrax/llm-council) | Run a decision past a council of AI advisors that peer-review each other |
 | [motion-ui](https://github.com/IPedrax/motion-ui) | Framer Motion / GSAP / anime.js / Three.js animation engineering |
