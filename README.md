@@ -8,16 +8,31 @@
 ![Badge](https://img.shields.io/badge/FREELANCE_%C2%B7_OPEN_TO_CONTRACTS-ff2e88?style=for-the-badge)
 
 **Pedro Medeiros (IPedrax) is a Brazilian science-fiction author and AI engineer.**
-He builds AI tools, autonomous agents and full-stack web applications. He studies
+He is writing *The Harvest of Minds (A Colheita de Mentes)*, a cyberpunk novel,
+and builds AI tools, autonomous agents and full-stack web applications. He studies
 Computer Engineering at IFC and works as a freelance developer in Brazil.
 
 Live apps, projects and writing: **[ipedrax.com](https://ipedrax.com)**
 
 ```
 > PROFILED BY THEM · LEAKED BY US
-> Writes science fiction. Builds software that won't sell your mind:
+> Sci-fi about a city that sells your mind. Software that won't:
 > AI tools, security skills and full-stack apps, most of it open source.
 ```
+
+---
+
+## `> cat ./required_reading.md`
+
+```
+TITLE  : THE HARVEST OF MINDS · ECOS, VOL. 1
+         (A Colheita de Mentes)
+GENRE  : Cyberpunk / Science Fiction
+SETTING: Dicotomia, a dystopian megacity split between the neon-drenched lower city and the corporate heights
+STATUS : IN REVISION
+```
+
+> Exploring memory, power, and forced evolution through a cast of augmented outcasts.
 
 ---
 
@@ -178,4 +193,4 @@ Shipped for paying clients:
 
 ---
 
-<sub>SYSTEM.HALT() => © 2026 PEDRO MEDEIROS</sub>
+<sub>SYSTEM.HALT() => © 2026 PEDRO MEDEIROS · DICOTOMIA AWAITS</sub>
